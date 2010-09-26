@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuabout"
+          android:icon="@drawable/about"
+          android:title="About" />
+    <item android:id="@+id/menusync"
+          android:icon="@drawable/sync"
+          android:title="Sync" />
+    <item android:id="@+id/menusettings"
+          android:icon="@drawable/setting"
+          android:title="Settings" />
+    <item android:id="@+id/menuactions"
+          android:icon="@drawable/actions"
+          android:title="New actions" />                     
+</menu>

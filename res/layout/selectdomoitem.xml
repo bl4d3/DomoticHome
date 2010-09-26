@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    >
+    <TextView 
+    	android:textSize="16dip"
+    	android:text="Select the items involved in the actions, on the next screen you can order them by drag'n'drop" 
+    	android:layout_marginRight="6dip"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+        android:textColor="#37b444"/>     
+ <ListView
+   android:id="@+id/listViewselectdomoitem"
+   android:layout_width="fill_parent" 
+   android:layout_height="wrap_content"
+   android:drawSelectorOnTop="false"
+   android:dividerHeight="2px"
+   android:divider="@drawable/listrow"
+   android:cacheColorHint="#00000000"
+   />  	   
+   <Button 
+    android:id="@+id/buttonnext"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Next"
+    />	
+    
+</LinearLayout>

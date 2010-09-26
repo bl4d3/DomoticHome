@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    >
+    
+    <TextView
+       android:id="@+id/ip"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Arduino IP"
+       android:textSize="22dip"
+       android:textColor="#37b444"
+	/>
+    <TextView
+       android:id="@+id/ip"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Insert the ip configured on your Arduino
+(ex: 192.168.1.15) DomoticHome will send the http GET through this ip and it will retrieve the data sent by Arduino"
+       android:textSize="16dip"
+       android:textColor="#37b444"
+       android:paddingTop="5dip"
+       android:paddingBottom="5dip"
+	/>	
+    
+	 <EditText
+		android:id="@+id/edittextip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	/>    
+   	<Button 
+	    android:id="@+id/buttonsave"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Save"
+	    android:layout_gravity="right"
+	    android:paddingBottom="5dip"
+	    />		
+</LinearLayout>
+

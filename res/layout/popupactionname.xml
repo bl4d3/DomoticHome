@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+    <TextView
+       android:id="@+id/actionname"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:textSize="22dip"
+       android:textColor="#ffffff"
+	/>
+    
+	 <EditText
+		android:id="@+id/edittextactionname"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	/>    
+   	<Button 
+	    android:id="@+id/buttonsaveactionname"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Save"
+	    android:layout_gravity="right"
+	    />	  
+</LinearLayout>

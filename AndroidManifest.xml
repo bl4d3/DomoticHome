@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="nerdydog.domoHome"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".DomoHome"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ActionShow"></activity>
+    	<activity android:name="ActuatorFunction"></activity>
+    	<activity android:name="SelectDomoItem"></activity>
+    	<activity android:name="DragAndDrop"></activity>				
+    	<activity android:name="Settings"></activity>
+    	<activity android:name="About"></activity>		
+		<service android:enabled="true" android:name=".DataService" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk android:targetSdkVersion="4"></uses-sdk>
+     <uses-sdk android:minSdkVersion="4" /> 
+
+
+</manifest> 
