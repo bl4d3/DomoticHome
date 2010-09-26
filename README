@@ -1,0 +1,148 @@
+--------------------------------------------------------------------
+This software is distributed under creative commons license
+http://creativecommons.org/licenses/by-nc-nd/2.0/it/deed.en_US
+Author: Mattia Lipreri - mattia.lipreri@gmail.com
+--------------------------------------------------------------------
+
+I created this project and my target is improve the comfort of my home. 
+
+Taking a look around I noticed that home automation solution proposed by 
+
+the big market player are too much expensive for me and, above all, I 
+
+should create new wires connections between light, plug, etc.. and the 
+
+control box.
+My idea is use what we already have without spend lot of money to buy a 
+
+owner solution, so I started with arduino, my android mobile phone, some 
+
+relays and my home.
+I have a nice home, 2 bad rooms, kitchen with living room and it was very 
+
+nice tka e the control of the lights, gate and door with my mobile phone.
+
+Let's start to play.
+I used an Arduino 2009 with ethernet shield and the game is very easy, I 
+
+send some http message to arduino, he moves some relays and give me back 
+
+a JSON response. Not so hard, but the hard business is interfacing with 
+
+the electrical wiring of home, with some patience I found what I need and 
+
+I linked those wires at the relays.
+
+Go deeper.
+Let's analyze a bit what my mobile send to arduino, the actors in this 
+
+scenario are:
+
+AS = Arduino Station (arduino 2009/Mega + ethernet shield with relays 
+
+linked to arduin digital out)
+
+M = Master (android app) 
+
+
+Sync Mobile - Arduino
+
+You have to configure the ip of your arduino on the app, in this way when 
+
+you perform a sync the mobile will send to arduino this:
+
+http://arduinoip/?m=hello
+
+and arduini will reply with this json message:
+
+{"ip" : "arduinoip", "devices" : [" +  "{ "type" : "gate", "name" : 
+
+"cancellino ingresso", "out" : "5"}, {"type" : "door", "name" : "porta 
+
+ingresso", "out" : "4"}, {"type" : "light", "name" : "luce soggiorno", 
+
+"out" : "6"}, {"type" : "light", "name" : "luce cucina", "out" : "7"}, 
+
+{"type" : "temperature", "name" : "camera da letto", "out" : "0"}, 
+
+{"type" : "temperature", "name" : "camera bimbi", "out" : "9"}, {"type" : 
+
+"wattmeter", "name" : "consumo energetico casa", "out" : "10"}]}
+
+so we know what sensor/realys are linked to arduino and what they are 
+
+used for.
+
+Take a closer look at this message:
+
+ip is the arduino ip
+out is the arduino pin where the relay/sensor is linked
+name a human identifier
+type object type
+
+Right now there are the following type available:
+
+plug 
+light 
+door
+gate 
+temperature
+humidity
+wattmeter
+
+The type temperature, humidity, wattmeter can't be controlled because 
+
+they are sensons, the app has a background job that retrieve this value 
+
+and store into a database, in the future we could make graph or use this 
+
+data for statistical consideration.
+
+Now the app is in sync with arduino!
+
+Put something on/off
+
+We just have to call to turn something on:
+
+http://arduinoip/?out=1&status=1
+
+status can be 1(on) or 0(off)
+out point at the arduino pin
+
+our arduino will give back this JSON massage if the transaction succeed:
+
+{"out": "4", "status" , "1"}
+
+What can we do with the andriod app:
+- sync the app with arduino
+- turn something on/off
+- create custom action (turn light on and then open the gate)
+
+Items used:
+
+1 Arduino 2009
+1 Ethernet shield
+1 Relay with driver
+1 power pack
+1 electrical stuff
+1 Pannello di plexiglas
+Total in euro: 70
+
+What I control:
+- living light
+- home gate
+- front door
+- check living room temperature 
+
+What I like to do in the future:
+- integrate my irrigation system
+- trigger an action at a specified time (need to work on android app)
+- link another arduino and handle it with the app
+- when the software will work fine give the code at the community
+
+Sorry for my english, I'm not a native speaker.
+--------------------------------------------------------------------
+This software is distributed under creative commons license
+http://creativecommons.org/licenses/by-nc-nd/2.0/it/deed.en_US
+Author: Mattia Lipreri - mattia.lipreri@gmail.com
+--------------------------------------------------------------------
