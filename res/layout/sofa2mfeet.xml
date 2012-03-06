@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    >
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/infosofaitem"
+	    android:textColor="#ed1c24" 
+	    android:gravity="center_horizontal" />
+    
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="2" android:layout_gravity="center_vertical|center_horizontal">
+	    <TableRow android:paddingLeft="20dip">
+			<Button
+			    android:id="@+id/buttonFeet1Down"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:background="@drawable/button_feet_down" />
+			
+			<Button
+			    android:id="@+id/buttonFeet1Up"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:background="@drawable/button_feet_up" 
+			    android:layout_marginLeft="20dip"/>
+	    </TableRow>   
+	    <TableRow android:paddingLeft="20dip">
+   			<Button
+			    android:id="@+id/buttonFeet2Up"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/button_feet_down"  />
+			    
+			<Button
+			    android:id="@+id/buttonFeet2Down"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/button_feet_up" 
+			    android:layout_marginLeft="20dip"/>
+	    </TableRow>   
+	     
+	</TableLayout>
+</LinearLayout>

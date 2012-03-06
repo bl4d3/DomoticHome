@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:id="@+id/queryalarm"
+    android:layout_height="fill_parent">
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:id="@+id/mylayout"
+        
+        android:padding="10px">
+      	    <TextView  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:text="Start Time"
+		    android:textSize="16dip"
+		    android:textColor="#37b444"
+		    android:id="@+id/labelstart"
+		    />        
+	        <TextView  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/hello"
+		    android:id="@+id/txtdate"
+		    android:layout_marginRight="10dip"
+		    android:textSize="16dip"
+		    android:textColor="#37b444"
+		    android:layout_below="@+id/labelstart"
+		    />
+		    <TextView  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/hello"
+		    android:id="@+id/txttime"
+		    android:textColor="#37b444"
+		    android:layout_below="@+id/txtdate"
+		    android:textSize="16dip"
+		    />    
+	        <Button
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:id="@+id/btndate"
+		    android:text="Select Date"
+   		    android:layout_toRightOf="@+id/txtdate"
+            android:layout_alignTop="@+id/txtdate"
+		    android:width="80dip"
+		    />    
+		    <Button
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:id="@+id/btntime"
+		    android:text="Select Time"
+		    android:layout_toRightOf="@+id/btndate"
+            android:layout_alignTop="@+id/btndate"
+            android:width="80dip"
+		    />   
+	</RelativeLayout>
+	
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:id="@+id/mylayoutEnd"
+        android:padding="10px" >
+	        <TextView  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:text="End Time"
+		    android:textSize="16dip"
+		    android:id="@+id/labelend"
+		    android:textColor="#37b444"
+		    />        
+	        <TextView  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/hello"
+		    android:id="@+id/txtdateEnd"
+		    android:layout_marginRight="10dip"
+		    android:textSize="16dip"
+		    android:layout_below="@+id/labelend"
+		    android:textColor="#37b444"
+		    />
+		    <TextView  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/hello"
+		    android:id="@+id/txttimeEnd"
+		    android:layout_below="@+id/txtdateEnd"
+		    android:textSize="16dip"
+		    android:textColor="#37b444"
+		    />    
+	        <Button
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:id="@+id/btndateEnd"
+		    android:text="Select Date"
+   		    android:layout_toRightOf="@+id/txtdateEnd"
+            android:layout_alignTop="@+id/txtdateEnd"
+		    android:width="80dip"
+		    />    
+		    <Button
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:id="@+id/btntimeEnd"
+		    android:text="Select Time"
+		    android:layout_toRightOf="@+id/btndateEnd"
+            android:layout_alignTop="@+id/btndateEnd"
+            android:width="80dip"
+		    />   
+	</RelativeLayout>	
+	
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content" 
+        android:layout_height="50dip" >
+			<CheckBox 
+				 android:id="@+id/mon"
+				 android:text="Plain"
+				 android:width="20dip"
+				 android:gravity="center_vertical|top"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"/>
+ 	        <TextView  
+ 	        	android:id="@+id/textmon"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="Mon"
+			    android:layout_marginTop="13dip"
+			    android:textSize="16dip"
+			    android:layout_toRightOf="@+id/mon"
+			    android:textColor="#37b444"/>   
+			<CheckBox 
+				 android:id="@+id/tue"
+				 android:text="Plain"
+				 android:width="20dip"
+				 android:gravity="center_vertical|top"
+				 android:layout_toRightOf="@+id/textmon"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"/>
+			<TextView  
+				android:id="@+id/texttue"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="Tue"
+			    android:layout_marginTop="13dip"
+			    android:textSize="16dip"
+			    android:layout_toRightOf="@+id/tue"
+			    android:textColor="#37b444"/>
+			<CheckBox 
+				 android:id="@+id/wed"
+				 android:text="Plain"
+				 android:width="20dip"
+				 android:layout_toRightOf="@+id/texttue"
+				 android:gravity="center_vertical|top"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"/>
+ 	        <TextView  
+ 	        	android:id="@+id/textwed"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="Wed"
+			    android:layout_marginTop="13dip"
+			    android:textSize="16dip"
+			    android:layout_toRightOf="@+id/wed"
+			    android:textColor="#37b444"/>   
+			<CheckBox 
+				 android:id="@+id/thu"
+				 android:text="Plain"
+				 android:width="20dip"
+				 android:gravity="center_vertical|top"
+				 android:layout_toRightOf="@+id/textwed"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"/>
+			<TextView  
+				android:id="@+id/textthu"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="Thu"
+			    android:layout_marginTop="13dip"
+			    android:textSize="16dip"
+			    android:layout_toRightOf="@+id/thu"
+			    android:textColor="#37b444"/>
+	    </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content" 
+        android:layout_height="50dip" >
+			<CheckBox 
+				 android:id="@+id/fri"
+				 android:text="Plain"
+				 android:width="20dip"
+				 android:gravity="center_vertical|top"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"/>
+ 	        <TextView  
+ 	        	android:id="@+id/textfri"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="Fri"
+			    android:layout_marginTop="13dip"
+			    android:textSize="16dip"
+			    android:layout_toRightOf="@+id/fri"
+			    android:textColor="#37b444"/>   
+			<CheckBox 
+				 android:id="@+id/sat"
+				 android:text="Plain"
+				 android:width="20dip"
+				 android:gravity="center_vertical|top"
+				 android:layout_toRightOf="@+id/textfri"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"/>
+			<TextView
+				android:id="@+id/textsat"  
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="Sat"
+			    android:layout_marginTop="13dip"
+			    android:textSize="16dip"
+			    android:layout_toRightOf="@+id/sat"
+			    android:textColor="#37b444"/>
+			 <CheckBox 
+				 android:id="@+id/sun"
+				 android:text="Plain"
+				 android:width="20dip"
+				 android:gravity="center_vertical|top"
+				 android:layout_toRightOf="@+id/textsat"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"/>
+			<TextView
+				android:id="@+id/textsun"  
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:text="Sun"
+			    android:layout_marginTop="13dip"
+			    android:textSize="16dip"
+			    android:layout_toRightOf="@+id/sun"
+			    android:textColor="#37b444"/>
+	</RelativeLayout>
+	
+ 	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="Trigger name"
+	    android:textSize="16dip"
+	    android:textColor="#37b444"/>
+	
+	 <EditText
+		android:id="@+id/edittexttriggername"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>    
+	
+    <Button
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/btnInsertTrigger"
+    android:text="Add trigger"
+    />
+    </LinearLayout>
+</LinearLayout>
