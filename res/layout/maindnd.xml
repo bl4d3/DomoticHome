@@ -13,14 +13,14 @@
 		android:background="#ffffff"
 		xmlns:android="http://schemas.android.com/apk/res/android">
 		
-			<nerdydog.domoHome.DnDListView
+			<nerdydog.domoHomeProd.DnDListView
 				android:id="@+id/android:list"
 				android:layout_width="fill_parent"
 			    android:layout_height="fill_parent"
 			    android:dividerHeight="2px"
 			    android:divider="@drawable/listrow"
 			    android:cacheColorHint="#00000000">
-			</nerdydog.domoHome.DnDListView>
+			</nerdydog.domoHomeProd.DnDListView>
 	
 	</AbsoluteLayout>
 	

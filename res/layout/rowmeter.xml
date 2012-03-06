@@ -13,7 +13,7 @@
                         
 
     <TextView 
-    	android:text="24,3°C"
+    	android:text=""
     	android:textSize="36dip" 
     	android:id="@+id/meter" 
     	android:layout_marginRight="6dip"

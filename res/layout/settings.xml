@@ -18,8 +18,7 @@
        android:id="@+id/ip"
        android:layout_width="fill_parent"
        android:layout_height="wrap_content"
-       android:text="Insert the ip configured on your Arduino
-(ex: 192.168.1.15) DomoticHome will send the http GET through this ip and it will retrieve the data sent by Arduino"
+       android:text="Start ip (ex: 192.168.1.10)"
        android:textSize="16dip"
        android:textColor="#37b444"
        android:paddingTop="5dip"
@@ -31,6 +30,42 @@
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 	/>    
+	
+    <TextView
+       android:id="@+id/ipend"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="End ip (ex: 192.168.1.15)"
+       android:textSize="16dip"
+       android:textColor="#37b444"
+       android:paddingTop="5dip"
+       android:paddingBottom="5dip"
+	/>	
+    
+	 <EditText
+		android:id="@+id/edittextipend"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	/>
+	
+	
+	<TextView
+       android:id="@+id/ipend"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Power adjustment"
+       android:textSize="16dip"
+       android:textColor="#37b444"
+       android:paddingTop="5dip"
+       android:paddingBottom="5dip"
+	/>	
+    
+	 <EditText
+		android:id="@+id/edittextpoweradj"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	/>
+	
    	<Button 
 	    android:id="@+id/buttonsave"
 	    android:layout_width="fill_parent"
@@ -38,6 +73,7 @@
 	    android:text="Save"
 	    android:layout_gravity="right"
 	    android:paddingBottom="5dip"
-	    />		
+	    />	
+		
 </LinearLayout>
 

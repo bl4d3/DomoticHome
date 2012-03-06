@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="nerdydog.domoHome"
+      package="nerdydog.domoHomeProd"
       android:versionCode="1"
       android:versionName="1.0">
     <application android:icon="@drawable/icon" android:label="@string/app_name">
@@ -16,8 +16,12 @@
     	<activity android:name="SelectDomoItem"></activity>
     	<activity android:name="DragAndDrop"></activity>				
     	<activity android:name="Settings"></activity>
-    	<activity android:name="About"></activity>		
-		<service android:enabled="true" android:name=".DataService" />
+    	<activity android:name="About"></activity>
+    	<activity android:name="Sofa"></activity>
+    	<activity android:name="Sofa2mFeet"></activity>
+    	<activity android:name="Sofa1mFeet"></activity>
+    	<activity android:name="nerdydog.domoHomeProd.AddTrigger"></activity>		
+		<service android:enabled="true" android:name="nerdydog.domoHomeProd.DataService" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-sdk android:targetSdkVersion="4"></uses-sdk>

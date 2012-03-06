@@ -4,22 +4,65 @@
     android:padding="6dip"
     android:background="@android:color/transparent">
     
-   	<Button 
-	    android:id="@+id/buttonactionshowadapter"
-	    android:layout_width="wrap_content"
-	    android:layout_height="fill_parent"
-	    android:layout_marginRight="6dip"
-	    android:background="@drawable/open"
-	    />	
+
+	    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:id="@+id/mylayoutEnd" >
+        
+       	<Button 
+		    android:id="@+id/buttonactionshowadapter"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginRight="6dip"
+		    android:background="@drawable/open"
+		    />	
     
-     <TextView
-         android:layout_width="wrap_content"
-         android:layout_height="fill_parent"
-         android:layout_weight="1"
-         android:id="@+id/info1actionshowadapter" 
-         android:gravity="center_vertical" 
-         android:text="demo1" 
-         android:textSize="22dip"
-         android:textColor="#37b444"
-         />
+	     <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:id="@+id/info1actionshowadapter" 
+	         android:text="demo1" 
+	         android:textSize="22dip"
+	         android:textColor="#37b444"
+	         android:layout_toRightOf="@+id/buttonactionshowadapter"
+             android:layout_alignTop="@+id/buttonactionshowadapter"
+	         />
+	         
+	   	<TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:id="@+id/info2actionshowadapter" 
+	         android:textSize="16dip"
+	         android:textColor="#37b444"
+	         android:layout_below="@+id/info1actionshowadapter"
+	         android:layout_toRightOf="@+id/buttonactionshowadapter"
+	         />
+	         
+	     <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:id="@+id/info3actionshowadapter" 
+	         android:textSize="16dip"
+	         android:textColor="#37b444"
+	         android:layout_toRightOf="@+id/info2actionshowadapter"
+             android:layout_alignTop="@+id/info2actionshowadapter"
+             android:layout_marginLeft="5dip"
+	         />
+	     <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:id="@+id/info4actionshowadapter" 
+	         android:textSize="13dip"
+	         android:textColor="#37b444"
+	         android:layout_below="@+id/info2actionshowadapter"
+	         android:layout_toRightOf="@+id/buttonactionshowadapter"
+             android:layout_marginLeft="5dip"
+	         />	         
+     </RelativeLayout>
 </LinearLayout>
